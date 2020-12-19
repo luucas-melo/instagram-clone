@@ -22,7 +22,7 @@
   },
   "include": [
     "src"
-  ], 
+, "src/.eslintrc.js"  ], 
   "files": [
     "src/theme/styled.d.ts"
   ]

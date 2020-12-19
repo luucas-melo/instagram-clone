@@ -6,5 +6,6 @@ export default {
         background: '#fafafa',
         text: '#262626',
         link: '#0095f6',
+        border: '#dbdbdb'
     },
 };

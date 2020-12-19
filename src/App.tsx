@@ -1,16 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Header from './components/Header';
-import { ThemeProvider } from 'styled-components';
-import light from './theme/light';
-
+import React from "react";
+import "./App.css";
+import Route from "./routes";
+import { ThemeProvider } from "styled-components";
+import light from "./theme/light";
+import GlobalStyle from './global';
 function App() {
   return (
     <ThemeProvider theme={light}>
-      <div className="App">
-        <Header />
-      </div>
+      <GlobalStyle />
+      <Route />
     </ThemeProvider>
   );
 }
