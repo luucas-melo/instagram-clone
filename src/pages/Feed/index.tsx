@@ -3,8 +3,6 @@ import React from "react";
 import { Container, Main, Side } from "./styles";
 import Header from '../../components/Header';
 
-
-
 const Feed: React.FC = () => {
   return (
     <>

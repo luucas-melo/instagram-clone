@@ -1,12 +1,11 @@
 export default {
-    title: 'dark',
-  
-    colors: {
-      primary: '#333',
-      secundary: '#C62E65',
-  
-      background: '#222',
-      text: '#fff',
+  title: 'dark',
+
+  colors: {
+      header: '#444444',    
+      background: '#333',
+      text: '#262626',
+      link: '#0095f6',
       border: '#dbdbdb'
-    },
-  };
+  },
+};
