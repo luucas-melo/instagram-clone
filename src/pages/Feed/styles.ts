@@ -15,7 +15,6 @@ export const Container = styled.div`
 `;
 
 export const Main = styled.div`
-    border: 1px solid blue;
     max-width: 614px;
     width: 100%;
     margin-right: 28px

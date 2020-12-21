@@ -10,6 +10,7 @@ declare module 'styled-components' {
             text: string;
             link: string;
             border: string;
+            logo: string;
         },
     }
 }

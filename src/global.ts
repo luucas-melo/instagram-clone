@@ -1,21 +1,3 @@
-// :root {
-//   --background-light: #fafafa;
-//   --title-color: #3E2753;
-//   --paragraph-color: #5a4b66;
-//   --secondary-color: #9241C0;
-//   --primary-button:#8838FF;
-//   --hover-button: #3E2753;
-//   --login-button: #E942FF;
-//   --secondary-green: #239875;
-//   --border-color: #C6CACD;
-//   --outline-color: #532f77;
-//   --footer-color: #38353B;
-//   --text-color: #5a4b66;
-//   --background: #E5E5E5E5;
-//   --placeholder-color: #A39DAA;
-//   --error-color: #F4685E;
-// }
-
 import  { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
