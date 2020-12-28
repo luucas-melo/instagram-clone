@@ -8,7 +8,7 @@ import { StoreState } from '../store';
 import theme from './theme/reducer';
 const persistConfig = {
     key: 'root',
-    storage,
+    storage,  
     whitelist: ['theme'],
   };
   

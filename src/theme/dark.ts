@@ -6,7 +6,7 @@ export default {
       background: '#333',
       text: '#262626',
       link: '#0095f6',
-      border: '#dbdbdb',
+      border: '#262626',
       logo: '#fafafa',
   },
 };
