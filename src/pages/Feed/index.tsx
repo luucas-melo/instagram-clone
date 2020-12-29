@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React from "react";
-import { Container, Main, Side } from "./styles";
+import { Container, Main, Side, Posts } from "./styles";
 import Header from '../../components/Header';
 import Stories from '../../components/Stories';
 const Feed: React.FC = () => {
@@ -10,6 +10,7 @@ const Feed: React.FC = () => {
       <Container>
         <Main>
           <Stories />
+          <Posts />
         </Main>
         <Side>
             Side

@@ -17,6 +17,17 @@ export const Navbar: any = styled.nav`
       fill: ${(props) => props.theme.colors.logo};
     }
   }
+  /* @media (max-width: 650px) {
+    & .react-switch-bg {
+      width: 20px !important;
+      height: 10px !important;
+    }
+
+    & .react-switch-handle {
+      width: 20px !important;
+      height: 20px !important;
+    }
+  } */
 `;
 
 Navbar.Icons = styled.div`
@@ -68,6 +79,10 @@ Navbar.Label = styled.label`
     path {
       fill: #8e8e8e;
     }
+  }
+
+  @media (max-width: 650px) {
+    display: none;
   }
 `;
 
