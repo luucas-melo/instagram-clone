@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container: any = styled.div`
-  padding: 16px 0;
+  padding: 16px 8px;
   border: 1px solid ${(props) => props.theme.colors.border};
   border-radius: 3px;
 
@@ -13,7 +13,7 @@ export const Container: any = styled.div`
     margin: auto;
     transform: initial;
   }
-  
+
   .slick-prev {
     left: 0;
   }
@@ -25,7 +25,7 @@ export const Container: any = styled.div`
 Container.Stories = styled.div`
   border: double 2px transparent;
   border-radius: 50%;
-  max-width: 60%;
+  max-width: 82%;
   background-image: linear-gradient(white, white),
     radial-gradient(circle at top left, #fd1d1d, #c13584);
   background-origin: border-box;
@@ -37,6 +37,4 @@ Container.Stories = styled.div`
       cursor: pointer;
     }
   }
-
-  
 `;

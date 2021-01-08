@@ -3,9 +3,11 @@ import { persistStore } from 'redux-persist';
 import createSagaMiddleware from 'redux-saga';
 import rootReducer from './modules/rootReducer';
 import { ThemeAction, ThemeState } from './modules/theme/types';
+import { StoryAction, StoryState } from './modules/story/types';
 
 export interface StoreState {
   theme: ThemeState;
+  story: StoryState
 }
 
 
