@@ -4,18 +4,18 @@ export const Container = styled.div``;
 export const Modal = styled.div`
   svg {
     position: absolute;
-    top: 10px;
+    top: 20px;
     color: #fafafa;
     &:hover {
       cursor: pointer;
     }
   }
   .close-icon {
-    right: 10px;
+    right: 20px;
   }
 
   .instagram-icon {
-    left: 10px;
+    left: 20px;
   }
   width: 100%;
   height: 100%;
