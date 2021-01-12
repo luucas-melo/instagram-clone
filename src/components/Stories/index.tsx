@@ -6,10 +6,17 @@ import "slick-carousel/slick/slick-theme.css";
 import ModalStories from "../../components/ModalStories";
 import { useSelector, useDispatch } from "react-redux";
 import { StoreState } from "../../store/store";
-import { setStoryVisible } from "../../store/modules/story/actions";
+import {
+  setStoryVisible,
+  setCurrentStory,
+} from "../../store/modules/story/actions";
+import { EventEmitter } from "events";
+import { EventChannel } from "redux-saga";
 
 const Stories: React.FC = () => {
- 
+  // function handleChoice(currentStory: string) {
+  //   console.log(currentStory)
+  // }
   const users = [
     "luucas-melo",
     "carlos-504",
@@ -44,20 +51,31 @@ const Stories: React.FC = () => {
   };
 
   const { visible } = useSelector((state: StoreState) => state.story);
+  const { currentStory } = useSelector((state: StoreState) => state.story);
 
   const dispatch = useDispatch();
-
 
   useEffect(() => {
     console.log(visible);
   }, [visible]);
   return (
     <Container>
-      {visible ? <ModalStories></ModalStories> : null}
+      {visible ? (
+        <ModalStories
+          story={`https://github.com/${currentStory}.png`}
+        ></ModalStories>
+      ) : null}
       <Slider {...settings}>
         {users.map((user) => (
           <Container.Stories key={user}>
-            <img src={`https://github.com/${user}.png`} alt="stories" onClick={() => dispatch(setStoryVisible())}/>
+            <img
+              src={`https://github.com/${user}.png`}
+              alt="stories"
+              onClick={() => {
+                dispatch(setStoryVisible());
+                dispatch(setCurrentStory({ currentStory: user }));
+              }}
+            />
           </Container.Stories>
         ))}
       </Slider>
