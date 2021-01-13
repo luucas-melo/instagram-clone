@@ -10,27 +10,11 @@ import {
   setStoryVisible,
   setCurrentStory,
 } from "../../store/modules/story/actions";
-import { EventEmitter } from "events";
-import { EventChannel } from "redux-saga";
+import getUsersArray from "../../utils/getUsersArray";
 
 const Stories: React.FC = () => {
-  // function handleChoice(currentStory: string) {
-  //   console.log(currentStory)
-  // }
-  const users = [
-    "luucas-melo",
-    "carlos-504",
-    "pedroholiveira1998",
-    "pedroborba05",
-    "Italo-Neves",
-    "Matheus73",
-    "luucas-melo",
-    "carlos-504",
-    "pedroholiveira1998",
-    "pedroborba05",
-    "Italo-Neves",
-    "Matheus73",
-  ];
+
+  const users = getUsersArray();
   const settings = {
     dots: false,
     infinite: false,
@@ -67,13 +51,13 @@ const Stories: React.FC = () => {
       ) : null}
       <Slider {...settings}>
         {users.map((user) => (
-          <Container.Stories key={user}>
+          <Container.Stories key={user.userName}>
             <img
-              src={`https://github.com/${user}.png`}
+              src={`https://github.com/${user.userName}.png`}
               alt="stories"
               onClick={() => {
                 dispatch(setStoryVisible());
-                dispatch(setCurrentStory({ currentStory: user }));
+                dispatch(setCurrentStory({ currentStory: user.userName }));
               }}
             />
           </Container.Stories>

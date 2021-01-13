@@ -6,7 +6,7 @@ import { ThemeContext } from "styled-components";
 import { useSelector, useDispatch } from "react-redux";
 import { StoreState } from "../../store/store";
 import { toggleTheme } from "../../store/modules/theme/actions";
-import { AiOutlineHeart, AiOutlineSearch } from "react-icons/ai";
+import { AiOutlineHeart } from "react-icons/ai";
 import { ImCompass2 } from "react-icons/im";
 import { IoPaperPlaneOutline } from "react-icons/io5";
 import { BiHomeAlt, BiSearch } from "react-icons/bi";

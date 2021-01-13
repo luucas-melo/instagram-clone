@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  border: 1px solid red;
   max-width: 935px;
   width: 100%;
   position: relative;
@@ -23,7 +22,7 @@ export const Main = styled.div`
 
 `;
 
-export const Posts = styled.div``;
+
 export const Side = styled.div`
   border: 1px solid green;
   height: 100vh;

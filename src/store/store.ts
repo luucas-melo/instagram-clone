@@ -4,10 +4,12 @@ import createSagaMiddleware from 'redux-saga';
 import rootReducer from './modules/rootReducer';
 import { ThemeAction, ThemeState } from './modules/theme/types';
 import { StoryAction, StoryState } from './modules/story/types';
+import { UsersPostsState } from './modules/post/types';
 
 export interface StoreState {
-  theme: ThemeState;
-  story: StoryState
+  theme: ThemeState,
+  story: StoryState,
+  post:UsersPostsState
 }
 
 
